@@ -54,9 +54,9 @@
 		AB6DA4F121C1AC2000F8F284 /* InternetProjectLauren */ = {
 			isa = PBXGroup;
 			children = (
+				AB6DA50421C1AC3D00F8F284 /* Resources */,
 				AB6DA50621C1AC4A00F8F284 /* Controller */,
 				AB6DA50521C1AC4400F8F284 /* View */,
-				AB6DA50421C1AC3D00F8F284 /* Resources */,
 			);
 			path = InternetProjectLauren;
 			sourceTree = "<group>";
