@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     
     // MARK: - Split view
     
-    func splitViewController(_ spliViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController: UIViewController) -> Bool
     {
         guard let secondaryAsNavController = secondaryViewController as? UINavigationController
             else
