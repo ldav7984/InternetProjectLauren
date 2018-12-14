@@ -73,7 +73,7 @@ public class InternetMasterViewController: UITableViewController
         return addresses.count
     }
     
-    public override func tableView(_ tablView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
