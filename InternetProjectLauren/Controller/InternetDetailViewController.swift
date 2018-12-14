@@ -17,7 +17,7 @@ public class InternetDetailViewController: UIViewController
     
     var detailTitle : String?
     {
-        didSet
+        didSet //property observer
         {
             updateView()
         }
@@ -72,6 +72,7 @@ public class InternetDetailViewController: UIViewController
             webViewer.load(requestedPDF as URLRequest)
         }
     }
+    
     /*
     // MARK: - Navigation
 
