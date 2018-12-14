@@ -65,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				AB6DA4F921C1AC2E00F8F284 /* Assets.xcassets */,
+				AB6DA4F221C1AC2000F8F284 /* AppDelegate.swift */,
 				AB6DA4FE21C1AC2E00F8F284 /* Info.plist */,
 			);
 			path = Resources;
@@ -82,7 +83,6 @@
 		AB6DA50621C1AC4A00F8F284 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AB6DA4F221C1AC2000F8F284 /* AppDelegate.swift */,
 				AB6DA4F421C1AC2000F8F284 /* ViewController.swift */,
 			);
 			path = Controller;
