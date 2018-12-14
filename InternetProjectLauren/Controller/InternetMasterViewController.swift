@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InternetMasterViewController: UITableViewController
+public class InternetMasterViewController: UITableViewController
 {
 
     private weak var internetDetail : InternetDetailViewController? = nil
@@ -18,9 +18,9 @@ class InternetMasterViewController: UITableViewController
     private func setupDetailContents() -> Void
     {
         internetTopics = [
-            "Internet Definitions! 😆",
+            "Internet Definitions! 📕",
             "Standard Search Engine 🤯",
-            "AP CSP 🕶",
+            "AP CSP 💻",
             "Canyons District 🙊",
             "CTEC ☕️",
             "Social Media 🛎"
@@ -42,10 +42,20 @@ class InternetMasterViewController: UITableViewController
         }
     }
     
-    override func viewDidLoad()
+    //method only happens once with the split view
+    public override func viewDidLoad() -> Void
     {
         super.viewDidLoad()
 
+        setupDetailContents()
+        self.clearsSelectionOnViewWillAppear = false
+        
+        if let split = splitViewController
+        {
+            let controllers = split.viewControllers
+            internetDetail = (controllers[controllers.count-1] as! UINavigationController).topViewController as? InternetDetailViewController
+        }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
