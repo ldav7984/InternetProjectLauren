@@ -16,7 +16,31 @@
                     <view key="view" contentMode="scaleToFill" id="7qo-Iz-0nP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuL-hn-GGE">
+                                <rect key="frame" x="0.0" y="64" width="375" height="279"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zhm-NT-Uav">
+                                <rect key="frame" x="0.0" y="339" width="375" height="328"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zhm-NT-Uav" firstAttribute="width" secondItem="4mf-Fb-ib5" secondAttribute="width" id="HkK-SY-v17"/>
+                            <constraint firstItem="Zhm-NT-Uav" firstAttribute="bottom" secondItem="4mf-Fb-ib5" secondAttribute="bottom" id="IwS-C7-BcD"/>
+                            <constraint firstItem="Zhm-NT-Uav" firstAttribute="leading" secondItem="UuL-hn-GGE" secondAttribute="leading" id="J1a-ss-CM7"/>
+                            <constraint firstItem="Zhm-NT-Uav" firstAttribute="top" secondItem="4mf-Fb-ib5" secondAttribute="top" constant="275" id="PDN-Tl-Ltk"/>
+                            <constraint firstItem="Zhm-NT-Uav" firstAttribute="trailing" secondItem="UuL-hn-GGE" secondAttribute="trailing" id="iuN-Iq-5OZ"/>
+                            <constraint firstItem="Zhm-NT-Uav" firstAttribute="leading" secondItem="7qo-Iz-0nP" secondAttribute="leading" id="kQI-1u-AMI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4mf-Fb-ib5"/>
                     </view>
                     <navigationItem key="navigationItem" id="pDD-ih-IEc"/>
