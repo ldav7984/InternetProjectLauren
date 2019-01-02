@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Internet Detail View Controller-->
         <scene sceneID="979-uf-l1Z">
             <objects>
-                <viewController id="2Bg-Tj-Vwo" sceneMemberID="viewController">
+                <viewController id="2Bg-Tj-Vwo" customClass="InternetDetailViewController" customModule="InternetProjectLauren" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7qo-Iz-0nP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,6 +44,10 @@
                         <viewLayoutGuide key="safeArea" id="4mf-Fb-ib5"/>
                     </view>
                     <navigationItem key="navigationItem" id="pDD-ih-IEc"/>
+                    <connections>
+                        <outlet property="screenTitle" destination="UuL-hn-GGE" id="vlv-zN-k5F"/>
+                        <outlet property="webViewer" destination="Zhm-NT-Uav" id="aEn-0w-szd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p90-7g-ajT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
