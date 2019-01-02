@@ -28,7 +28,7 @@ public class InternetMasterViewController: UITableViewController
         
         addresses = [
             "",
-            "",
+            "https://www.google.com",
             "",
             "https://canyons.instructure.com",
             "https://ctec.canyonsdistrict.org/",
