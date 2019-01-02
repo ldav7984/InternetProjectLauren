@@ -32,7 +32,7 @@ public class InternetMasterViewController: UITableViewController
             "https://apcentral.collegeboard.org/courses/ap-computer-science-principles/course",
             "https://canyons.instructure.com",
             "https://ctec.canyonsdistrict.org/",
-            "https://www.instagram.com/thepianoguys/?hl=en"
+            "https://www.instagram.com"
         ]
         
         if let splitView = splitViewController
