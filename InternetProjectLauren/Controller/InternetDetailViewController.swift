@@ -34,9 +34,10 @@ public class InternetDetailViewController: UIViewController
     
     private func updateView() -> Void
     {
+        //make sure everything actually exists
         if (detailTitle != nil && screenTitle != nil && webViewer != nil)
         {
-            if (detailTitle?.range(of: "Definitions", options: .caseInsensitive) != nil)
+            if (detailTitle?.range(of: "Definitions", options: .caseInsensitive) != nil) //like .contains in Java
             {
                 loadPDF()
             }
@@ -72,15 +73,5 @@ public class InternetDetailViewController: UIViewController
             webViewer.load(requestedPDF as URLRequest)
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
