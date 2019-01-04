@@ -18,19 +18,19 @@ public class InternetMasterViewController: UITableViewController
     private func setupDetailContents() -> Void
     {
         internetTopics = [
-            "Internet Definitions! 📕",
+            "Internet Definitions 📕",
             "Standard Search Engine 🤯",
             "AP CSP 💻",
-            "Canyons District 🙊",
+            "Canyons District 🏫",
             "CTEC ☕️",
             "Social Media 🛎"
         ]
         
         addresses = [
-            "",
+            "InternetDefinitions",
             "https://www.google.com",
             "https://apcentral.collegeboard.org/courses/ap-computer-science-principles/course",
-            "https://canyons.instructure.com",
+            "http://www.canyonsdistrict.org/",
             "https://ctec.canyonsdistrict.org/",
             "https://www.instagram.com"
         ]
